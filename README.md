@@ -9,4 +9,5 @@
 - ⚡ I enjoy photography, reading, swimming, and lifting weights :)
 - 📫 Reach out to me: tanlucdev@gmail.com
 - My github status:
+- [<br/>]
   [![GitHub Streak](https://streak-stats.demolab.com/?user=tanlucdev)](https://git.io/streak-stats)
