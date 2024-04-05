@@ -8,5 +8,4 @@
 - 🧰 I build with: `HTML & CSS`, `JavaScript` `React.js` `Node.js`...
 - ⚡ I enjoy photography, reading, swimming, and lifting weights :)
 - 📫 Reach out to me: tanlucdev@gmail.com
-- My github status:
-- [![GitHub Streak](https://streak-stats.demolab.com/tanlucdevDenverCoder1)](https://git.io/streak-stats)
+- My github status: [![GitHub Streak](https://streak-stats.demolab.com/?user=tanlucdev)](https://git.io/streak-stats)
