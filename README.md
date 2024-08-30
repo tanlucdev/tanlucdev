@@ -4,7 +4,7 @@
 [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/tanlucdev/)
 
 
-- 👋 Hi, I’m Luc. You can call me Kento.
+- 👋 Hi, I’m Tan Luc
 - 🏢 Senior Student [@Ton Duc Thang University](https://tdtu.edu.vn/), in SaiGon VN
 - 🧰 I build with: `HTML & CSS`, `JavaScript` `React.js` `Node.js`...
 - ⚡ I enjoy photography, reading, swimming, and lifting weights :)
