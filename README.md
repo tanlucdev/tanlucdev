@@ -5,7 +5,7 @@
 
 
 - 👋 Hi, I’m Tan Luc
-- 🏢 Senior Student [@Ton Duc Thang University](https://tdtu.edu.vn/), in SaiGon VN
+- 🏢 Software Engineer, in SaiGon VN
 - 🧰 I build with: `HTML & CSS`, `JavaScript` `React.js` `Node.js`, `Next.js`...
 - ⚡ I enjoy photography, reading, swimming, and lifting weights :)
 - 📫 Reach out to me: tanlucdev@gmail.com
