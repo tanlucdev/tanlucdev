@@ -6,7 +6,7 @@
 
 - 👋 Hi, I’m Tan Luc
 - 🏢 Software Engineer, in SaiGon VN
-- 🧰 I build with: `JavaScript` `React.js` `Node.js`, `Next.js`...
+- 🧰 I build with: `JavaScript`, `TypeScript`, `React.js` `Node.js`, `Next.js`...
 - ⚡ I enjoy photography, reading, running and lifting weights :)
 - 📫 Reach out to me: tanlucdev@gmail.com
 - My github status:
