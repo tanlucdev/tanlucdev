@@ -4,7 +4,7 @@
 [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/tanlucdev/)
 
 
-- 👋 Hi, I’m Tan Luc
+- 👋 Hi, I’m Luc
 - 🏢 Software Engineer, in SaiGon VN
 - 🧰 I build with: `JavaScript`, `TypeScript`, `React.js` `Node.js`, `Next.js`...
 - ⚡ I enjoy photography, reading, running and lifting weights :)
