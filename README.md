@@ -4,7 +4,7 @@
 [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/tanlucdev/)
 
 
-- [![tanlucdev](https://tanluc.click/assets/Logo-b9c9c616.png)](https://tanluc.click/) Feel free to checkout my [portfolio](https://tanluc.click/) website!
+- [![tanlucdev](https://emojigraph.org/media/microsoft/boy_1f466.png)](https://tanluc.click/) Feel free to checkout my [portfolio](https://tanluc.click/) website!
 - 🏢 Software Engineer, in SaiGon VN
 - 🧰 I build with: `JavaScript`, `TypeScript`, `Node.js`, `React.js` , `Next.js`...
 - ⚡ I enjoy photography, reading, running and lifting weights :)
