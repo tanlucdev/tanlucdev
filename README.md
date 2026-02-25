@@ -12,3 +12,5 @@
 - My github status:
   <br/>
   [![GitHub Streak](https://streak-stats.demolab.com/?user=tanlucdev)](https://git.io/streak-stats)
+
+   ![](https://komarev.com/ghpvc/?username=tanlucdev&color=ff69b4)
