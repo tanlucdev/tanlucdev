@@ -2,8 +2,8 @@
 
 
 - Feel free to checkout my [portfolio](https://luc.works/) website!
-- 🏢 Frontend Developer, in SaiGon VN
-- 🧰 I build with: `JavaScript`, `TypeScript`, `Node.js`, `React.js` , `Next.js`...
+- 🏢 Sofrware Engineer, in SaiGon VN
+- 🧰 I build with: `JavaScript`, `TypeScript`, `Node.js`, `React.js` ,...
 - ⚡ I enjoy photography, reading, running and lifting weights :)
 - 📫 Reach out to me: tanlucdev@gmail.com
 - My github status:
