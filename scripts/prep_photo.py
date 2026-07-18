@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 from pathlib import Path
 
 from PIL import Image
@@ -30,10 +31,10 @@ def crop_upper_subject(image: Image.Image) -> Image.Image:
     left, top, right, bottom = subject_box(image)
     width = right - left
     height = bottom - top
-    crop_h = max(1, int(height * 0.46))
+    crop_h = max(1, int(height * float(os.getenv("PORTRAIT_CROP_H", "0.72"))))
     crop_w = int(crop_h * TARGET_ASPECT)
     cx = (left + right) // 2
-    cy = int(top + height * 0.26)
+    cy = int(top + height * float(os.getenv("PORTRAIT_CROP_Y", "0.38")))
     x0 = cx - crop_w // 2
     y0 = cy - crop_h // 2
     x1 = x0 + crop_w

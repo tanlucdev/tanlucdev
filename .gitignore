@@ -2,3 +2,10 @@ __pycache__/
 *.py[cod]
 .venv/
 data/portrait*.png
+data/portrait*.jpg
+data/manual-*
+data/subject-*.png
+data/test-*.png
+preview-*.svg
+preview-alt-*.svg
+preview*.html
