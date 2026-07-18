@@ -30,10 +30,10 @@ def crop_upper_subject(image: Image.Image) -> Image.Image:
     left, top, right, bottom = subject_box(image)
     width = right - left
     height = bottom - top
-    crop_h = max(1, int(height * 0.62))
+    crop_h = max(1, int(height * 0.46))
     crop_w = int(crop_h * TARGET_ASPECT)
     cx = (left + right) // 2
-    cy = int(top + height * 0.34)
+    cy = int(top + height * 0.26)
     x0 = cx - crop_w // 2
     y0 = cy - crop_h // 2
     x1 = x0 + crop_w
@@ -42,7 +42,8 @@ def crop_upper_subject(image: Image.Image) -> Image.Image:
     canvas = Image.new("RGBA", (crop_w, crop_h), "white")
     src_x0, src_y0 = max(0, x0), max(0, y0)
     src_x1, src_y1 = min(image.width, x1), min(image.height, y1)
-    canvas.paste(image.crop((src_x0, src_y0, src_x1, src_y1)), (src_x0 - x0, src_y0 - y0))
+    patch = image.crop((src_x0, src_y0, src_x1, src_y1))
+    canvas.paste(patch, (src_x0 - x0, src_y0 - y0), patch)
     return canvas
 
 
