@@ -11,7 +11,7 @@ def main() -> int:
         print("heatmap SVG missing or empty", file=sys.stderr)
         return 1
     root = ET.parse(HEATMAP_SVG).getroot()
-    rects = [el for el in root.iter() if el.tag.endswith("rect")]
+    rects = [el for el in root.iter() if el.tag.endswith("rect") and el.attrib.get("class") == "cell"]
     expected = HEATMAP_WEEKS * HEATMAP_DAYS
     if len(rects) != expected:
         print(f"expected {expected} rect cells, got {len(rects)}", file=sys.stderr)

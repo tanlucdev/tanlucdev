@@ -15,12 +15,21 @@ ASCII_SVG = ROOT / f"{USERNAME}-ascii.svg"
 INFO_CARD_SVG = ROOT / "info-card.svg"
 HEATMAP_SVG = ROOT / "contrib-heatmap.svg"
 CONTRIB_JSON = DATA_DIR / "contributions.json"
+SOURCE_PHOTO = DATA_DIR / "portrait.png"
+SOURCE_PREPPED = DATA_DIR / "portrait-prepped.png"
 
-BG = "#0d1117"
-FG = "#c9d1d9"
-MUTED = "#8b949e"
-GREEN = "#3fb950"
-HEATMAP_PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#56d364"]
+BG = "#0a0e14"
+BG2 = "#0d1420"
+FG = "#e6edf3"
+INK = "#c9d1d9"
+MUTED = "#7d8590"
+FRAME = "#30363d"
+BLUE = "#58a6ff"
+GREEN = "#39d353"
+ORANGE = "#ffa657"
+CYAN = "#22d3ee"
+GOLD = "#f2cc60"
+HEATMAP_PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
 
 HEATMAP_WEEKS = 53
 HEATMAP_DAYS = 7

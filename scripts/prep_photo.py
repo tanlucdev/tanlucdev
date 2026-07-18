@@ -3,8 +3,6 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-import cv2
-import numpy as np
 from PIL import Image
 
 
@@ -24,9 +22,19 @@ def main() -> None:
 
     white = Image.new("RGBA", image.size, "white")
     image = Image.alpha_composite(white, image).convert("L")
-    arr = np.array(image)
-    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
-    out = Image.fromarray(clahe.apply(arr))
+    try:
+        import cv2
+        import numpy as np
+
+        arr = np.array(image)
+        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+        out = Image.fromarray(clahe.apply(arr))
+    except Exception as exc:
+        from PIL import ImageEnhance, ImageOps
+
+        print(f"CLAHE skipped: {exc}")
+        out = ImageOps.autocontrast(image, cutoff=1)
+        out = ImageEnhance.Contrast(out).enhance(1.35)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     out.save(args.output)
     print(args.output)
