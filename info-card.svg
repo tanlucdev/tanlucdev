@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="520" viewBox="0 0 490 520" role="img" aria-label="Neofetch profile card">
+<title>Neofetch profile card</title>
+<path d="M0 0h490v520H0z" fill="#0d1117"/>
+<text x="34" y="38" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17">tanlucdev@github</text>
+<path d="M34 52h420" stroke="#8b949e" stroke-width="1"/>
+<g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="16">
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.18s" begin="0.20s" fill="freeze"/><text x="34" y="78" fill="#3fb950">user      </text><text x="146" y="78" fill="#c9d1d9">tanlucdev</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.18s" begin="0.38s" fill="freeze"/><text x="34" y="126" fill="#3fb950">now       </text><text x="146" y="126" fill="#c9d1d9">Software Engineer · Saigon, Vietnam</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.18s" begin="0.56s" fill="freeze"/><text x="34" y="174" fill="#3fb950">prev      </text><text x="146" y="174" fill="#c9d1d9">Shipping web products</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.18s" begin="0.74s" fill="freeze"/><text x="34" y="222" fill="#3fb950">stack     </text><text x="146" y="222" fill="#c9d1d9">TypeScript · React · Node.js</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.18s" begin="0.92s" fill="freeze"/><text x="34" y="270" fill="#3fb950">highlights</text><text x="146" y="270" fill="#c9d1d9">Practical UI · APIs · performance</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.18s" begin="1.10s" fill="freeze"/><text x="34" y="318" fill="#3fb950">contact   </text><text x="146" y="318" fill="#c9d1d9">tanlucdev@gmail.com · luc.works</text></g>
+</g>
+</svg>

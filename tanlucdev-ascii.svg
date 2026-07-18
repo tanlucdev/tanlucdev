@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="370" height="520" viewBox="0 0 370 520" role="img" aria-label="ASCII portrait">
+<title>ASCII portrait</title>
+<path d="M0 0h370v520H0z" fill="#0d1117"/>
+<g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="6.96" fill="#c9d1d9" xml:space="preserve">
+<text x="10" y="24.00" opacity="0"> <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.00s" fill="freeze"/></text>
+<text x="10" y="33.81" opacity="0"> <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.04s" fill="freeze"/></text>
+<text x="10" y="43.62" opacity="0"> <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.07s" fill="freeze"/></text>
+<text x="10" y="53.43" opacity="0"> <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.11s" fill="freeze"/></text>
+<text x="10" y="63.25" opacity="0">                                      @@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.14s" fill="freeze"/></text>
+<text x="10" y="73.06" opacity="0">                              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.18s" fill="freeze"/></text>
+<text x="10" y="82.87" opacity="0">                          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.21s" fill="freeze"/></text>
+<text x="10" y="92.68" opacity="0">                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.25s" fill="freeze"/></text>
+<text x="10" y="102.49" opacity="0">                   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.28s" fill="freeze"/></text>
+<text x="10" y="112.30" opacity="0">                 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.32s" fill="freeze"/></text>
+<text x="10" y="122.11" opacity="0">               @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.35s" fill="freeze"/></text>
+<text x="10" y="131.92" opacity="0">              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.39s" fill="freeze"/></text>
+<text x="10" y="141.74" opacity="0">             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.42s" fill="freeze"/></text>
+<text x="10" y="151.55" opacity="0">            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.46s" fill="freeze"/></text>
+<text x="10" y="161.36" opacity="0">            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.49s" fill="freeze"/></text>
+<text x="10" y="171.17" opacity="0">           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.53s" fill="freeze"/></text>
+<text x="10" y="180.98" opacity="0">            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.56s" fill="freeze"/></text>
+<text x="10" y="190.79" opacity="0">            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.60s" fill="freeze"/></text>
+<text x="10" y="200.60" opacity="0">             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.63s" fill="freeze"/></text>
+<text x="10" y="210.42" opacity="0">              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.67s" fill="freeze"/></text>
+<text x="10" y="220.23" opacity="0">               @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.70s" fill="freeze"/></text>
+<text x="10" y="230.04" opacity="0">               @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.74s" fill="freeze"/></text>
+<text x="10" y="239.85" opacity="0">               @@@@                                                              @@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.77s" fill="freeze"/></text>
+<text x="10" y="249.66" opacity="0">               @@@@               @@@@@@@@                @@@@@@@@               @@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.81s" fill="freeze"/></text>
+<text x="10" y="259.47" opacity="0">              @@@@@               @@@@@@@@                @@@@@@@@               @@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.84s" fill="freeze"/></text>
+<text x="10" y="269.28" opacity="0">              @@@@@               @@@@@@@@                @@@@@@@@               @@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.88s" fill="freeze"/></text>
+<text x="10" y="279.09" opacity="0">              @@@@@                                                              @@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.91s" fill="freeze"/></text>
+<text x="10" y="288.91" opacity="0">              @@@@@                                                              @@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.95s" fill="freeze"/></text>
+<text x="10" y="298.72" opacity="0">               @@@@                                                              @@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.98s" fill="freeze"/></text>
+<text x="10" y="308.53" opacity="0">               @@@@                                                              @@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.02s" fill="freeze"/></text>
+<text x="10" y="318.34" opacity="0">               @@@@                                                              @@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.05s" fill="freeze"/></text>
+<text x="10" y="328.15" opacity="0">               @@@@                                                              @@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.09s" fill="freeze"/></text>
+<text x="10" y="337.96" opacity="0">                @@@               @                              @               @@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.12s" fill="freeze"/></text>
+<text x="10" y="347.77" opacity="0">                @@@        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@        @@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.16s" fill="freeze"/></text>
+<text x="10" y="357.58" opacity="0">                 @@        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@        @@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.19s" fill="freeze"/></text>
+<text x="10" y="367.40" opacity="0">                 @@        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@        @@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.23s" fill="freeze"/></text>
+<text x="10" y="377.21" opacity="0">                  @        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@        @<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.26s" fill="freeze"/></text>
+<text x="10" y="387.02" opacity="0">                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.30s" fill="freeze"/></text>
+<text x="10" y="396.83" opacity="0">                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.33s" fill="freeze"/></text>
+<text x="10" y="406.64" opacity="0">                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.37s" fill="freeze"/></text>
+<text x="10" y="416.45" opacity="0">                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.40s" fill="freeze"/></text>
+<text x="10" y="426.26" opacity="0">                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.44s" fill="freeze"/></text>
+<text x="10" y="436.08" opacity="0">                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.47s" fill="freeze"/></text>
+<text x="10" y="445.89" opacity="0">                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.51s" fill="freeze"/></text>
+<text x="10" y="455.70" opacity="0">                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.54s" fill="freeze"/></text>
+<text x="10" y="465.51" opacity="0"> <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.58s" fill="freeze"/></text>
+<text x="10" y="475.32" opacity="0"> <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.61s" fill="freeze"/></text>
+<text x="10" y="485.13" opacity="0"> <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.65s" fill="freeze"/></text>
+<text x="10" y="494.94" opacity="0"> <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.68s" fill="freeze"/></text>
+<text x="10" y="504.75" opacity="0"> <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.72s" fill="freeze"/></text>
+<text x="10" y="514.57" opacity="0"> <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.75s" fill="freeze"/></text>
+<text x="10" y="524.38" opacity="0"> <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.79s" fill="freeze"/></text>
+<text x="10" y="534.19" opacity="0"> <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.82s" fill="freeze"/></text>
+</g>
+</svg>
