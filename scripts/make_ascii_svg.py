@@ -22,7 +22,7 @@ def image_to_rows(path: Path) -> list[str]:
         for x in range(ASCII_COLS):
             lum = (image.getpixel((x, y)) / 255.0) ** 1.14
             row += " " if lum >= 0.82 else ramp[max(0, min(len(ramp) - 1, int((1 - lum) * (len(ramp) - 1) + 0.5)))]
-        chars.append(row.rstrip() or " ")
+        chars.append(row)
     return chars
 
 
