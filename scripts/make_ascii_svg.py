@@ -5,7 +5,7 @@ import html
 import os
 from pathlib import Path
 
-from config import ASCII_COLS, ASCII_RAMP, ASCII_ROWS, ASCII_SVG, BG, BG2, FRAME, INK, MUTED, PORTRAIT_WIDTH, SOURCE_PREPPED, USERNAME
+from config import ASCII_COLS, ASCII_RAMP, ASCII_ROWS, ASCII_SVG, BG, BG2, FRAME, INK, MUTED, SOURCE_PREPPED, USERNAME
 
 
 def image_to_rows(path: Path) -> list[str]:
@@ -38,7 +38,7 @@ def render(rows: list[str], out: Path) -> None:
     canvas_w, canvas_h = art_w + pad * 2, titlebar_h + art_h + status_h + pad
     art_top = titlebar_h + pad * 0.35
     parts = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{PORTRAIT_WIDTH}" height="{canvas_h}" viewBox="0 0 {canvas_w} {canvas_h}" role="img" aria-label="Tan Luc ASCII portrait" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{canvas_w}" height="{canvas_h}" viewBox="0 0 {canvas_w} {canvas_h}" role="img" aria-label="Tan Luc ASCII portrait" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">',
         f'<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{BG2}"/><stop offset="1" stop-color="{BG}"/></linearGradient></defs>',
         f'<rect width="{canvas_w}" height="{canvas_h}" rx="12" fill="url(#bg)"/>',
         f'<rect x="0.5" y="0.5" width="{canvas_w-1}" height="{canvas_h-1}" rx="12" fill="none" stroke="{FRAME}"/>',

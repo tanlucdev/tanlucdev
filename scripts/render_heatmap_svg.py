@@ -37,9 +37,8 @@ def main() -> None:
         delay = week * 0.018 + weekday * 0.045
         label = html.escape(f'{day["date"]}: {day["count"]} contributions')
         cells.append(
-            f'<rect class="cell" x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="{RADIUS}" fill="{color(day["count"], max_count)}" opacity="0" transform="translate(0 -6)">'
-            f'<title>{label}</title><animate attributeName="opacity" from="0" to="1" dur="0.18s" begin="{delay:.3f}s" fill="freeze"/>'
-            f'<animateTransform attributeName="transform" type="translate" from="0 -6" to="0 0" dur="0.18s" begin="{delay:.3f}s" fill="freeze"/></rect>'
+            f'<rect class="cell c" x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="{RADIUS}" fill="{color(day["count"], max_count)}" style="animation-delay:{delay:.3f}s">'
+            f'<title>{label}</title></rect>'
         )
     total = data.get("stats", {}).get("total", sum(d["count"] for d in days))
     current = data.get("stats", {}).get("current_streak", 0)
@@ -65,8 +64,10 @@ def main() -> None:
         lx += CELL
     legend.append(f'<text x="{lx + 4}" y="{legend_y + CELL * 0.8:.1f}" fill="{MUTED}" font-size="10">More</text>')
     sep_y = legend_y + CELL + 14
+    css = ".c{opacity:0;animation:cell .42s cubic-bezier(.2,.8,.2,1) both}@keyframes cell{0%{opacity:0;transform:translateY(-6px)}100%{opacity:1;transform:translateY(0)}}"
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{HEATMAP_WIDTH}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{footer}" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
 <title>{footer}</title>
+<style>{css}</style>
 <defs><linearGradient id="hbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{BG2}"/><stop offset="1" stop-color="{BG}"/></linearGradient></defs>
 <rect width="{width}" height="{height}" rx="12" fill="url(#hbg)"/>
 <rect x="0.5" y="0.5" width="{width-1}" height="{height-1}" rx="12" fill="none" stroke="{CYAN}" stroke-width="1" stroke-opacity="0.55"/>
