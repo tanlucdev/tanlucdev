@@ -10,11 +10,11 @@
 
 <table>
   <tr>
-    <td valign="top" width="370">
-      <img src="./tanlucdev-ascii.svg" width="370" alt="Tan Luc ASCII portrait">
+    <td valign="top" width="470">
+      <img src="./tanlucdev-ascii.svg" width="470" alt="Tan Luc ASCII portrait">
     </td>
-    <td valign="top" width="490">
-      <img src="./info-card.svg" width="490" alt="Tan Luc profile info card">
+    <td valign="top" width="390">
+      <img src="./info-card.svg" width="390" alt="Tan Luc profile info card">
     </td>
   </tr>
 </table>
