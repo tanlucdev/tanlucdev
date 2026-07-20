@@ -25,7 +25,7 @@ ROWS = [
 
 def main() -> None:
     frozen = os.getenv("STATIC") == "1"
-    width, height, pad, titlebar_h = INFO_CARD_WIDTH, 376, 20, 30
+    width, height, pad, titlebar_h = INFO_CARD_WIDTH, 490, 20, 30
     key_x, val_x, line_h = pad, pad + 92, 20.5
     rows = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="Tan Luc profile card" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">',
