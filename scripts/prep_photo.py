@@ -12,7 +12,7 @@ TARGET_ASPECT = 100 / 53
 def subject_box(image: Image.Image) -> tuple[int, int, int, int]:
     alpha = image.getchannel("A")
     bbox = alpha.getbbox()
-    if bbox:
+    if bbox and bbox != (0, 0, image.width, image.height):
         return bbox
 
     rgb = image.convert("RGB")
