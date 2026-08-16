@@ -30,6 +30,14 @@ def fallback_rows() -> list[str]:
     return [" " * ASCII_COLS for _ in range(ASCII_ROWS)]
 
 
+def balance_rows(rows: list[str]) -> list[str]:
+    out = []
+    for i, row in enumerate(rows):
+        shift = min(5, max(0, i - 35))
+        out.append(row[shift:] + " " * shift if row.strip() else row)
+    return out
+
+
 def render(rows: list[str], out: Path) -> None:
     static = bool(os.getenv("STATIC"))
     cell_w, cell_h = 8, 15
@@ -71,7 +79,7 @@ def main() -> None:
     parser.add_argument("image", nargs="?", type=Path, default=SOURCE_PREPPED)
     parser.add_argument("-o", "--output", type=Path, default=ASCII_SVG)
     args = parser.parse_args()
-    render(image_to_rows(args.image) if args.image else fallback_rows(), args.output)
+    render(balance_rows(image_to_rows(args.image) if args.image else fallback_rows()), args.output)
     print(args.output)
 
 
