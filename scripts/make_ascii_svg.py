@@ -51,7 +51,7 @@ def render(rows: list[str], out: Path) -> None:
         y = art_top + ry * cell_h + cell_h * 0.74
         row_y = art_top + ry * cell_h
         delay = ry * 0.11
-        text = f'<text xml:space="preserve" x="{pad}" y="{y:.1f}" fill="{INK}" font-size="{cell_h * 0.86:.1f}" textLength="{art_w}" lengthAdjust="spacing">{html.escape(row)}</text>'
+        text = f'<text xml:space="preserve" x="{pad}" y="{y:.1f}" fill="{INK}" font-size="{cell_h * 0.86:.1f}">{html.escape(row)}</text>'
         if static:
             parts.append(text)
         else:

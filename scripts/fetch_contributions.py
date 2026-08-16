@@ -32,14 +32,14 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
 
 def streak(days: list[dict], longest: bool) -> int:
     best = cur = 0
-    today = date.today().isoformat()
+    current_end = max((item["date"] for item in days), default="")
     for item in sorted(days, key=lambda x: x["date"]):
         if item["count"] > 0:
             cur += 1
             best = max(best, cur)
         else:
             cur = 0
-        if not longest and item["date"] == today:
+        if not longest and item["date"] == current_end:
             return cur
     return best if longest else cur
 
@@ -92,7 +92,7 @@ def main() -> int:
         new = fetch()
     except Exception as exc:
         print(f"fetch failed; leaving existing JSON untouched: {exc}", file=sys.stderr)
-        return 0
+        return 1
     old = json.loads(CONTRIB_JSON.read_text(encoding="utf-8")) if CONTRIB_JSON.exists() else None
     if old == new:
         print("contributions unchanged")
