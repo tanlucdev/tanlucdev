@@ -2,32 +2,18 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 import time
 from collections import defaultdict
-from datetime import date, timedelta
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 
 import requests
 
 from config import CONTRIB_JSON, HEATMAP_DAYS, HEATMAP_WEEKS, USERNAME
 
-QUERY = """
-query($login: String!, $from: DateTime!, $to: DateTime!) {
-  user(login: $login) {
-    contributionsCollection(from: $from, to: $to) {
-      contributionCalendar {
-        totalContributions
-        weeks {
-          contributionDays {
-            contributionCount
-            date
-          }
-        }
-      }
-    }
-  }
-}
-"""
+DAY_RE = re.compile(r'data-date="(\d{4}-\d{2}-\d{2})".*?</td>\s*<tool-tip[^>]*>(.*?)</tool-tip>', re.S)
 
 
 def streak(days: list[dict], longest: bool) -> int:
@@ -59,25 +45,21 @@ def stats(days: list[dict]) -> dict:
 
 
 def fetch() -> dict:
-    token = os.environ["GITHUB_TOKEN"]
-    end = date.today()
+    tz = ZoneInfo(os.getenv("PROFILE_TZ", "Asia/Ho_Chi_Minh"))
+    end = datetime.now(tz).date()
     start = end - timedelta(days=HEATMAP_WEEKS * HEATMAP_DAYS - 1)
-    payload = {"query": QUERY, "variables": {"login": USERNAME, "from": f"{start}T00:00:00Z", "to": f"{end}T23:59:59Z"}}
-    headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"}
     last_error: Exception | None = None
     for attempt in range(3):
         try:
-            res = requests.post("https://api.github.com/graphql", json=payload, headers=headers, timeout=20)
-            res.raise_for_status()
-            body = res.json()
-            if body.get("errors"):
-                raise RuntimeError(body["errors"])
-            weeks = body["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
-            days = [
-                {"date": day["date"], "count": int(day["contributionCount"])}
-                for week in weeks
-                for day in week["contributionDays"]
-            ][-HEATMAP_WEEKS * HEATMAP_DAYS :]
+            days_by_date = {}
+            for year in range(start.year, end.year + 1):
+                res = requests.get(f"https://github.com/users/{USERNAME}/contributions?from={year}-01-01&to={year}-12-31", timeout=20)
+                res.raise_for_status()
+                for day, label in DAY_RE.findall(res.text):
+                    count = 0 if label.startswith("No ") else int(re.match(r"\d+", label).group())
+                    if start.isoformat() <= day <= end.isoformat():
+                        days_by_date[day] = count
+            days = [{"date": day, "count": days_by_date[day]} for day in sorted(days_by_date)]
             if len(days) != HEATMAP_WEEKS * HEATMAP_DAYS:
                 raise RuntimeError(f"expected 371 days, got {len(days)}")
             return {"username": USERNAME, "generated_at": end.isoformat(), "days": days, "stats": stats(days)}
