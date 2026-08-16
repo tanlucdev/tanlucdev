@@ -9,22 +9,18 @@ from config import ASCII_COLS, ASCII_RAMP, ASCII_ROWS, ASCII_SVG, BG, BG2, FRAME
 
 
 def image_to_rows(path: Path) -> list[str]:
-    from PIL import Image, ImageEnhance, ImageFilter
+    from PIL import Image, ImageEnhance
 
     image = Image.open(path).convert("L")
     image = ImageEnhance.Brightness(image).enhance(1.02)
     image = ImageEnhance.Contrast(image).enhance(1.12)
     image = image.resize((ASCII_COLS, ASCII_ROWS), Image.Resampling.LANCZOS)
-    edges = image.filter(ImageFilter.FIND_EDGES)
     chars = []
     ramp = ASCII_RAMP
     for y in range(ASCII_ROWS):
         row = ""
         for x in range(ASCII_COLS):
-            lum = image.getpixel((x, y)) / 255.0
-            if 0 < x < ASCII_COLS - 1 and 0 < y < ASCII_ROWS - 1 and 0.82 <= lum < 0.96 and edges.getpixel((x, y)) > 18:
-                lum = 0.72
-            lum = lum**1.14
+            lum = (image.getpixel((x, y)) / 255.0) ** 1.14
             row += " " if lum >= 0.82 else ramp[max(0, min(len(ramp) - 1, int((1 - lum) * (len(ramp) - 1) + 0.5)))]
         chars.append(row)
     return chars
