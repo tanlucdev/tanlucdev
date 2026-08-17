@@ -2,7 +2,7 @@
 
 <h3><code>tanlucdev@github ~ $ ./contributions.sh</code></h3>
 
-<img src="https://cdn.jsdelivr.net/gh/tanlucdev/tanlucdev@main/contrib-heatmap.svg?v=20260817a" width="860" alt="GitHub contribution heatmap">
+<img src="https://cdn.jsdelivr.net/gh/tanlucdev/tanlucdev@main/contrib-heatmap.svg?v=20260817b" width="860" alt="GitHub contribution heatmap">
 
 <br>
 
@@ -11,10 +11,10 @@
 <table>
   <tr>
     <td valign="top" width="470">
-      <img src="https://cdn.jsdelivr.net/gh/tanlucdev/tanlucdev@main/tanlucdev-ascii.svg?v=20260817a" width="470" alt="Tan Luc ASCII portrait">
+      <img src="https://cdn.jsdelivr.net/gh/tanlucdev/tanlucdev@main/tanlucdev-ascii.svg?v=20260817b" width="470" alt="Tan Luc ASCII portrait">
     </td>
     <td valign="top" width="390">
-      <img src="https://cdn.jsdelivr.net/gh/tanlucdev/tanlucdev@main/info-card.svg?v=20260817a" width="390" alt="Tan Luc profile info card">
+      <img src="https://cdn.jsdelivr.net/gh/tanlucdev/tanlucdev@main/info-card.svg?v=20260817b" width="390" alt="Tan Luc profile info card">
     </td>
   </tr>
 </table>
