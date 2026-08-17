@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import argparse
 import html
-import os
 from pathlib import Path
 
 from config import ASCII_COLS, ASCII_RAMP, ASCII_ROWS, ASCII_SVG, BG, BG2, FRAME, INK, MUTED, SOURCE_PREPPED, USERNAME
@@ -32,14 +31,20 @@ def fallback_rows() -> list[str]:
 
 def balance_rows(rows: list[str]) -> list[str]:
     out = []
+    center = ASCII_COLS // 2
     for i, row in enumerate(rows):
-        shift = min(5, max(0, i - 35))
-        out.append(row[shift:] + " " * shift if row.strip() else row)
+        chars = list(row)
+        if row.strip() and i >= 43:
+            for j in range(center):
+                mirror = center * 2 - j
+                if 0 <= mirror < len(chars):
+                    chars[j] = chars[mirror]
+        out.append("".join(chars))
     return out
 
 
 def render(rows: list[str], out: Path) -> None:
-    static = bool(os.getenv("STATIC"))
+    static = True
     cell_w, cell_h = 8, 15
     pad, titlebar_h, status_h = 20, 30, 30
     art_w, art_h = ASCII_COLS * cell_w, ASCII_ROWS * cell_h
@@ -69,7 +74,7 @@ def render(rows: list[str], out: Path) -> None:
     status_y = titlebar_h + art_h + pad * 0.35
     parts.append(f'<line x1="0" y1="{status_y:.1f}" x2="{canvas_w}" y2="{status_y:.1f}" stroke="{FRAME}"/>')
     parts.append(f'<text x="{pad}" y="{status_y + 19:.1f}" fill="{MUTED}" font-size="13">{USERNAME}@github:~$ whoami <tspan fill="{INK}">Tan Luc</tspan></text>')
-    parts.append(f'<rect x="{pad+217}" y="{status_y+7:.1f}" width="8" height="14" fill="{INK}"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" dur="1s" repeatCount="indefinite"/></rect></svg>')
+    parts.append(f'<rect x="{pad+217}" y="{status_y+7:.1f}" width="8" height="14" fill="{INK}"/></svg>')
     svg = "".join(parts)
     out.write_text(svg, encoding="utf-8")
 
