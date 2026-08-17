@@ -36,7 +36,7 @@ def main() -> None:
         y = grid_top + weekday * step
         label = html.escape(f'{day["date"]}: {day["count"]} contributions')
         cells.append(
-            f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="{RADIUS}" fill="{color(day["count"], max_count)}">'
+            f'<rect class="cell" x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="{RADIUS}" fill="{color(day["count"], max_count)}">'
             f'<title>{label}</title></rect>'
         )
     total = data.get("stats", {}).get("total", sum(d["count"] for d in days))
