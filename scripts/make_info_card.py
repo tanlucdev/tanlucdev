@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import html
-import os
 from pathlib import Path
 
 from config import BG, BG2, BLUE, CYAN, FG, FRAME, GREEN, INFO_CARD_SVG, INFO_CARD_WIDTH, MUTED, ORANGE, USERNAME
@@ -24,7 +23,7 @@ ROWS = [
 
 
 def main() -> None:
-    frozen = os.getenv("STATIC") == "1"
+    frozen = True
     width, height, pad, titlebar_h = INFO_CARD_WIDTH, 490, 20, 30
     key_x, val_x, line_h = pad, pad + 92, 20.5
     rows = [
