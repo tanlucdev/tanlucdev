@@ -6,7 +6,7 @@
 
 <br>
 
-<h3><code>tanlucdev@github ~ $ whoami</code></h3>
+<h2><code>tanlucdev@github ~ $ whoami</code></h2>
 
 <table>
   <tr>
