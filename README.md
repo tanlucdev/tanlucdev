@@ -24,7 +24,7 @@
 
 <h3><code>tanlucdev@github ~ $ ./links.sh</code></h3>
 
-<p><b>Software Engineer · Full-stack Developer · Product Builder</b></p>
+<p><b>Software Engineer</b></p>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-luc.works-0d1117?style=for-the-badge&logo=vercel&logoColor=white)](https://luc.works/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-tanlucdev-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tanlucdev/)
