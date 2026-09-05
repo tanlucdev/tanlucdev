@@ -3,7 +3,7 @@ from __future__ import annotations
 import sys
 import xml.etree.ElementTree as ET
 
-from config import HEATMAP_DAYS, HEATMAP_SVG, HEATMAP_WEEKS
+from config import ASCII_GIF, ASCII_SVG, HEATMAP_DAYS, HEATMAP_SVG, HEATMAP_WEEKS
 
 
 def main() -> int:
@@ -15,6 +15,12 @@ def main() -> int:
     expected = HEATMAP_WEEKS * HEATMAP_DAYS
     if len(rects) != expected:
         print(f"expected {expected} rect cells, got {len(rects)}", file=sys.stderr)
+        return 1
+    if "@keyframes draw" not in ASCII_SVG.read_text(encoding="utf-8"):
+        print("ASCII SVG animation missing", file=sys.stderr)
+        return 1
+    if not ASCII_GIF.exists() or ASCII_GIF.stat().st_size == 0:
+        print("ASCII GIF missing or empty", file=sys.stderr)
         return 1
     print(f"ok: {len(rects)} cells")
     return 0

@@ -12,6 +12,7 @@ INFO_CARD_WIDTH = 390
 HEATMAP_WIDTH = 860
 
 ASCII_SVG = ROOT / f"{USERNAME}-ascii.svg"
+ASCII_GIF = ROOT / f"{USERNAME}-ascii.gif"
 INFO_CARD_SVG = ROOT / "info-card.svg"
 HEATMAP_SVG = ROOT / "contrib-heatmap.svg"
 CONTRIB_JSON = DATA_DIR / "contributions.json"

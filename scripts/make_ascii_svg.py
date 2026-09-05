@@ -44,7 +44,6 @@ def balance_rows(rows: list[str]) -> list[str]:
 
 
 def render(rows: list[str], out: Path) -> None:
-    static = True
     cell_w, cell_h = 8, 15
     pad, titlebar_h, status_h = 20, 30, 30
     art_w, art_h = ASCII_COLS * cell_w, ASCII_ROWS * cell_h
@@ -53,6 +52,7 @@ def render(rows: list[str], out: Path) -> None:
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{canvas_w}" height="{canvas_h}" viewBox="0 0 {canvas_w} {canvas_h}" role="img" aria-label="Tan Luc ASCII portrait" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">',
         f'<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{BG2}"/><stop offset="1" stop-color="{BG}"/></linearGradient></defs>',
+        f'<style>@keyframes draw{{from{{clip-path:inset(0 100% 0 0)}}to{{clip-path:inset(0)}}}}@keyframes cursor{{0%{{opacity:.85;transform:translateX(0)}}99%{{opacity:.85}}100%{{opacity:0;transform:translateX({art_w}px)}}}}.line{{animation:draw .11s linear both}}.cursor{{animation:cursor .11s linear forwards;opacity:0}}@media (prefers-reduced-motion:reduce){{.line,.cursor{{animation:none}}}}</style>',
         f'<rect width="{canvas_w}" height="{canvas_h}" rx="12" fill="url(#bg)"/>',
         f'<rect x="0.5" y="0.5" width="{canvas_w-1}" height="{canvas_h-1}" rx="12" fill="none" stroke="{FRAME}"/>',
         f'<line x1="0" y1="{titlebar_h}" x2="{canvas_w}" y2="{titlebar_h}" stroke="{FRAME}"/>',
@@ -64,13 +64,9 @@ def render(rows: list[str], out: Path) -> None:
         y = art_top + ry * cell_h + cell_h * 0.74
         row_y = art_top + ry * cell_h
         delay = ry * 0.11
-        text = f'<text xml:space="preserve" x="{pad}" y="{y:.1f}" fill="{INK}" font-size="{cell_h * 0.86:.1f}">{html.escape(row)}</text>'
-        if static:
-            parts.append(text)
-        else:
-            parts.append(f'<clipPath id="r{ry}"><rect x="{pad}" y="{row_y:.1f}" height="{cell_h}" width="0"><animate attributeName="width" from="0" to="{art_w}" begin="{delay:.3f}s" dur="0.11s" fill="freeze"/></rect></clipPath>')
-            parts.append(f'<g clip-path="url(#r{ry})">{text}</g>')
-            parts.append(f'<rect y="{row_y+1:.1f}" width="{cell_w}" height="{cell_h-2}" fill="{INK}" opacity="0"><animate attributeName="x" from="{pad}" to="{pad+art_w}" begin="{delay:.3f}s" dur="0.11s" fill="freeze"/><set attributeName="opacity" to="0.85" begin="{delay:.3f}s"/><set attributeName="opacity" to="0" begin="{delay+0.11:.3f}s"/></rect>')
+        text = f'<text class="line" style="animation-delay:{delay:.3f}s" xml:space="preserve" x="{pad}" y="{y:.1f}" fill="{INK}" font-size="{cell_h * 0.86:.1f}">{html.escape(row)}</text>'
+        parts.append(text)
+        parts.append(f'<rect class="cursor" style="animation-delay:{delay:.3f}s" x="{pad}" y="{row_y+1:.1f}" width="{cell_w}" height="{cell_h-2}" fill="{INK}"/>')
     status_y = titlebar_h + art_h + pad * 0.35
     parts.append(f'<line x1="0" y1="{status_y:.1f}" x2="{canvas_w}" y2="{status_y:.1f}" stroke="{FRAME}"/>')
     parts.append(f'<text x="{pad}" y="{status_y + 19:.1f}" fill="{MUTED}" font-size="13">{USERNAME}@github:~$ whoami <tspan fill="{INK}">Tan Luc</tspan></text>')
