@@ -2,10 +2,6 @@
   "days": [
     {
       "count": 0,
-      "date": "2025-10-24"
-    },
-    {
-      "count": 0,
       "date": "2025-10-25"
     },
     {
@@ -1481,18 +1477,22 @@
       "date": "2026-10-28"
     },
     {
-      "count": 0,
+      "count": 14,
       "date": "2026-10-29"
+    },
+    {
+      "count": 3,
+      "date": "2026-10-30"
     }
   ],
-  "generated_at": "2026-10-29",
+  "generated_at": "2026-10-30",
   "stats": {
     "best_day": {
       "count": 15,
       "date": "2026-10-09"
     },
-    "current_streak": 0,
-    "longest_streak": 77,
+    "current_streak": 79,
+    "longest_streak": 79,
     "monthly_totals": {
       "2025-10": 1,
       "2025-11": 3,
@@ -1506,9 +1506,9 @@
       "2026-07": 34,
       "2026-08": 67,
       "2026-09": 54,
-      "2026-10": 77
+      "2026-10": 94
     },
-    "total": 276
+    "total": 293
   },
   "username": "tanlucdev"
 }
