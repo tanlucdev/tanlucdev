@@ -2,10 +2,6 @@
   "days": [
     {
       "count": 0,
-      "date": "2025-11-01"
-    },
-    {
-      "count": 0,
       "date": "2025-11-02"
     },
     {
@@ -1481,18 +1477,22 @@
       "date": "2026-11-05"
     },
     {
-      "count": 74,
-      "date": "2026-11-06"
-    }
-  ],
-  "generated_at": "2026-11-06",
-  "stats": {
-    "best_day": {
-      "count": 74,
+      "count": 75,
       "date": "2026-11-06"
     },
-    "current_streak": 86,
-    "longest_streak": 86,
+    {
+      "count": 7,
+      "date": "2026-11-07"
+    }
+  ],
+  "generated_at": "2026-11-07",
+  "stats": {
+    "best_day": {
+      "count": 75,
+      "date": "2026-11-06"
+    },
+    "current_streak": 87,
+    "longest_streak": 87,
     "monthly_totals": {
       "2025-11": 3,
       "2025-12": 0,
@@ -1506,9 +1506,9 @@
       "2026-08": 222,
       "2026-09": 249,
       "2026-10": 171,
-      "2026-11": 114
+      "2026-11": 122
     },
-    "total": 960
+    "total": 968
   },
   "username": "tanlucdev"
 }
